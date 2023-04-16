@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+
+  - name: postgres
+    schema: public
+    database: raw
+
+    quoting:
+      database: false
+      schema: false
+      
