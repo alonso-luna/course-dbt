@@ -2,10 +2,10 @@
 
 {{
   config(
-    target_database = dev_db,
-    target_schema = dbt_alonsolunasonycom,
+    target_database = 'dev_db',
+    target_schema = 'dbt_alonsolunasonycom',
     strategy='check',
-    unique_key='product_id',
+    unique_key='product_guid',
     check_cols=['inventory'],
    )
 }}
