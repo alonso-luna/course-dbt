@@ -1,0 +1,65 @@
+version: 2
+
+models:
+  - name: stg_postgres_addresses
+    description: Table of address.
+    columns:
+      - name: address_guid
+      - name: address
+      - name: zipcode
+      - name: state
+      - name: country
+  - name: stg_postgres_events
+    description: Table of events.
+    columns:
+      - name: event_guid
+      - name: session_guid
+      - name: user_guid
+      - name: page_url
+      - name: created_at
+      - name: event_type
+      - name: order_guid
+      - name: product_guid
+  - name: stg_postgres_order_items
+    description: Table of orders and the products in the order.
+    columns:
+      - name: order_id
+      - name: product_id
+      - name: quantity
+  - name: stg_postgres_orders
+    description: Table of orders.
+    columns:
+      - name: order_guid
+      - name: user_guid
+      - name: promo_guid
+      - name: address_guid
+      - name: created_guid
+      - name: order_cost
+      - name: shipping_cost
+      - name: order_total
+      - name: tracking_guid
+      - name: shipping_service
+  - name: stg_postgres_products
+    description: Table of products.
+    columns:
+      - name: product_guid
+      - name: name
+      - name: price
+      - name: inventory
+  - name: stg_postgres_promos
+    description: Table of promos.
+    columns:
+      - name: promo_guid
+      - name: discount
+      - name: status
+  - name: stg_postgres_users
+    description: Table of users.
+    columns:
+      - name: user_guid
+      - name: first_name
+      - name: last_name
+      - name: email
+      - name: phone_number
+      - name: created_at
+      - name: updated_at
+      - name: address_guid
