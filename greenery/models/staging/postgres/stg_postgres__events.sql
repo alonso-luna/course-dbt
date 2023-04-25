@@ -11,7 +11,7 @@ with source as (
 , renamed_recast as (
   select
     event_id as event_guid
-    , session_id as sessions_guid
+    , session_id as session_guid
 	  , user_id as user_guid
 	  , page_url
 	  , created_at
