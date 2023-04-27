@@ -31,13 +31,15 @@ create or replace TRANSIENT TABLE DEV_DB.DBT_ALONSOLUNASONYCOM.FCT_PAGE_VIEWS (
 I'm using 3 tests:
 - Unique: The STG tables primary keys needs to be unique.
 - Not null: Not null values for id fields, except promo_guid
-- Positive values :The assumption are that each numeric value that represents an amount for a event needs to be postive.
+- Positive values :The assumption are that each numeric value that represents an amount for a event needs to be positive.
 
 
 **Did you find any “bad” data as you added and ran tests on your models? How did you go about either cleaning the data in the dbt model or adjusting your assumptions/tests?**
-Yes, I'm using almost everywhere the unique and not null test but it was failing in the tracking_guid column and aslo in the prodcut_guid while doing a join with the event table. Looks liek you can get package_shippeds wihout product_guid.
+
+Yes, I'm using almost everywhere the unique and not null test but it was failing in the tracking_guid column and also in the product_guid while doing a join with the event table. Looks like you can get package_shippeds without product_guid.
 
 **Your stakeholders at Greenery want to understand the state of the data each day. Explain how you would ensure these tests are passing regularly and how you would alert stakeholders about bad data getting through.**
+
 Running the dbt test after dbt run on a schedule and slack alerts.
 
 **Which products had their inventory change from week 1 to week 2?**
