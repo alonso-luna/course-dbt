@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: dim_users
+    description: ""
+    columns:
+      - name: user_guid
+        description: ""
+        tests:
+          - not_null
+
+      - name: first_name
+        description: ""
+
+      - name: last_name
+        description: ""
+
+      - name: email
+        description: ""
+
+      - name: phone_number
+        description: ""
+
+      - name: created_at
+        description: ""
+
+      - name: updated_at
+        description: ""
+
+      - name: address_guid
+        description: ""
+        tests:
+          - not_null

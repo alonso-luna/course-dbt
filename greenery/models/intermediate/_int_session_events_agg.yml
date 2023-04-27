@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: int_session_events_agg
+    description: ""
+    columns:
+      - name: user_guid
+        description: ""
+        tests:
+          - not_null
+
+      - name: session_guid
+        description: ""
+        tests:
+          - not_null
+
+      - name: add_to_carts
+        description: ""
+
+      - name: checkouts
+        description: ""
+
+      - name: package_shippeds
+        description: ""
+
+      - name: page_views
+        description: ""
+
+      - name: first_session_event_at_utc
+        description: ""
+
+      - name: last_session_event_at_utc
+        description: ""

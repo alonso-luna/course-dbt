@@ -22,7 +22,6 @@ models:
       - name: session_guid
         tests:
             - not_null
-            - unique
       - name: user_guid
       - name: page_url
       - name: created_at

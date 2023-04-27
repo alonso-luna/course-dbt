@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: fct_page_views
+    description: ""
+    columns:
+      - name: product_name
+        description: ""
+
+      - name: event_date
+        description: ""
+
+      - name: sessions
+        description: ""
+
+      - name: add_to_carts
+        description: ""
+
+      - name: checkouts
+        description: ""
+
+      - name: package_shippeds
+        description: ""
+
+      - name: page_views
+        description: ""

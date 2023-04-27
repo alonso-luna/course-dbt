@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: fct_user_sessions
+    description: ""
+    columns:
+      - name: session_guid
+        description: ""
+        tests:
+          - not_null
+
+      - name: user_guid
+        description: ""
+        tests:
+          - not_null
+
+      - name: first_name
+        description: ""
+
+      - name: last_name
+        description: ""
+
+      - name: email
+        description: ""
+
+      - name: page_views
+        description: ""
+
+      - name: add_to_carts
+        description: ""
+
+      - name: checkouts
+        description: ""
+
+      - name: package_shippeds
+        description: ""
+
+      - name: firts_session_event
+        description: ""
+
+      - name: last_session_event
+        description: ""
+
+      - name: session_length_minutes
+        description: ""

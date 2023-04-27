@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: fct_user_orders
+    description: ""
+    columns:
+      - name: user_guid
+        description: ""
+        tests:
+          - not_null
+
+      - name: orders_quantity
+        description: ""
+        tests:
+          - not_null
+          - positive_values
+
+      - name: order_total
+        description: ""
+        tests:
+          - not_null
+          - positive_values
+          
+      - name: first_order_at
+        description: ""
+
+      - name: latest_order_at
+        description: ""

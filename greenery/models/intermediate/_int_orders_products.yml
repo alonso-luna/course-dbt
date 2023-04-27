@@ -1,0 +1,67 @@
+version: 2
+
+models:
+  - name: int_orders_products
+    description: ""
+    columns:
+      - name: order_guid
+        description: ""
+        tests:
+          - not_null
+
+      - name: user_guid
+        description: ""
+        tests:
+          - not_null
+
+      - name: promo_guid
+        description: ""
+
+      - name: address_guid
+        description: ""
+        tests:
+          - not_null
+
+      - name: created_at
+        description: ""
+        tests:
+          - not_null
+
+      - name: order_cost
+        description: ""
+        tests:
+          - not_null
+          - positive_values
+
+      - name: shipping_cost
+        description: ""
+        tests:
+          - not_null
+          - positive_values
+
+      - name: order_total
+        description: ""
+        tests:
+          - not_null
+          - positive_values
+
+      - name: tracking_guid
+        description: ""
+
+      - name: shipping_service
+        description: ""
+
+      - name: estimated_delivery_at
+        description: ""
+
+      - name: delivered_at
+        description: ""
+
+      - name: status
+        description: ""
+
+      - name: order_quantity
+        description: ""
+        tests:
+          - not_null
+          - positive_values

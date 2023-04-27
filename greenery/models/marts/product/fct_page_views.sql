@@ -14,8 +14,9 @@ with events as (
 
 
 , final as (
-    select 
-    products.name as product_name
+    select
+    products.product_guid
+    , products.name as product_name
     , events.created_at as event_date
     , count(events.session_guid) as sessions
     , sum(case when events.event_type = 'add_to_cart' then 1 else 0 end) as add_to_carts
@@ -25,7 +26,7 @@ with events as (
     from events 
     left join products
         on events.product_guid = products.product_guid
-    group by 1, 2
+    group by 1, 2, 3
 )
 
 select * from final
