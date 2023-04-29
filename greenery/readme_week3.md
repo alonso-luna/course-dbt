@@ -103,9 +103,9 @@ Note: I will add date in conversion_rate for future
 
 ## PART 6. Dbt snapshots
 
-Bamboo 
-Monstera 
-Philodendron 
-Pothos 
-String of Pearls 
-ZZ Plant
+- Bamboo 
+- Monstera 
+- Philodendron 
+- Pothos 
+- String of Pearls 
+- ZZ Plant
