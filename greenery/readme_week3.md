@@ -92,4 +92,20 @@ packages:
 
 ## PART 5. Dbt packages
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+For both models 'fct_page_views' and 'fct_product_conversion_rate' I implemented the same macro, the difference between both of them is the granularity.
+
+- fct_page_views : product, date, session
+- fct_product_conversion_rate: order, product, session.  
+
+Note: I will add date in conversion_rate for future
+
+![alt text](https://github.com/alonso-luna/course-dbt/blob/main/greenery/DBT_Week_3_Project.png?raw=true)
+
+## PART 6. Dbt snapshots
+
+Bamboo 
+Monstera 
+Philodendron 
+Pothos 
+String of Pearls 
+ZZ Plant
