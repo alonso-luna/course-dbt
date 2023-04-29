@@ -11,7 +11,7 @@ with session_events_agg as (
 , users as (
     select * from {{ ref('stg_postgres__users')}}
 )
-
+    
 select session_events_agg.session_guid
     , session_events_agg.user_guid
     , users.first_name
@@ -27,4 +27,3 @@ select session_events_agg.session_guid
 from session_events_agg 
 left join users
   on session_events_agg.user_guid = users.user_guid
-    

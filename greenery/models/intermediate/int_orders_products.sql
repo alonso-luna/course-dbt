@@ -9,11 +9,7 @@ with orders as (
 )
 
 , order_items as (
-    select
-        order_guid
-        , count(distinct product_guid) as order_quantity
-    from {{ ref('stg_postgres__order_items')}}
-    group by 1
+    select * from {{ ref('stg_postgres__order_items')}}
 )
 
 , final as (
@@ -22,16 +18,16 @@ with orders as (
         , orders.user_guid
         , orders.promo_guid
         , orders.address_guid
+        , orders.tracking_guid
         , orders.created_at
         , orders.order_cost
         , orders.shipping_cost
         , orders.order_total
-        , orders.tracking_guid
         , orders.shipping_service
         , orders.estimated_delivery_at
         , orders.delivered_at
         , orders.status
-        , order_items.order_quantity
+        , order_items.product_guid
     from orders
     left join order_items
         on orders.order_guid = order_items.order_guid

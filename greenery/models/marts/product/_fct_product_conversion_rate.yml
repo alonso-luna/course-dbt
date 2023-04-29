@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: fct_product_conversion_rate
+    description: ""
+    columns:
+      - name: session_guid
+        description: ""
+
+      - name: order_guid
+        description: ""
+
+      - name: product_guid
+        description: ""
+
+      - name: product_name
+        description: ""
+
+      - name: page_views
+        description: ""
+
+      - name: add_to_carts
+        description: ""
+
+      - name: checkouts
+        description: ""
+
+      - name: package_shippeds
+        description: ""
