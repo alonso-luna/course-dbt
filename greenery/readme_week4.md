@@ -88,6 +88,6 @@ I believe the best practices are one of the most valuable aspects of this course
 
 **if you are thinking about moving to analytics engineering, what skills have you picked that give you the most confidence in pursuing this next step?**
 
-I come from a data engineer area so for me is to learn a new skill (dbt) that allowed me to incorporate software engineering practices to data problems.
+I come from a data engineering area so for me is to learn a new skill (dbt) that allows me to incorporate software engineering practices to data problems. Making easier the analysis of data.
 
 
