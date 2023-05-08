@@ -38,6 +38,7 @@ with events as (
 , final as (
     select
     events.session_guid
+    , date(events.created_at) as event_date
     , orders_products.order_guid
     , orders_products.product_guid
     , products.name as product_name
@@ -48,7 +49,7 @@ with events as (
     left join products
         on orders_products.product_guid = products.product_guid
     where events.order_guid is not null
-    group by 1, 2, 3, 4
+    group by 1, 2, 3, 4, 5
 )
 
 select * from final

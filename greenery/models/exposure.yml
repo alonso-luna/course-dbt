@@ -1,0 +1,18 @@
+version: 2
+
+exposures:
+
+  - name: product_funnel_dashboard
+    label: Product Funnel Dashboard
+    type: dashboard
+    maturity: high
+    description: >
+      Models that are critical to our product funnel dashboard
+
+    depends_on:
+      - ref('fct_page_views')
+      - ref('fct_product_conversion_rate')
+
+    owner:
+      name: Alonso Luna
+      email: alonso.luna@sony.com

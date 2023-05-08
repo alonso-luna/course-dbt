@@ -19,10 +19,10 @@ with events as (
     , products.name as product_name
     , date(events.created_at) as event_date
     , events.session_guid
-    , count(case when events.event_type = 'add_to_cart' then 1 else 0 end) as add_to_carts
-    , count(case when events.event_type = 'checkout' then 1 else 0 end) as checkouts
-    , count(case when events.event_type = 'package_shipped' then 1 else 0 end) as package_shippeds
-    , count(case when events.event_type = 'page_view' then 1 else 0 end) as page_views
+    , sum(case when events.event_type = 'add_to_cart' then 1 else 0 end) as add_to_carts
+    , sum(case when events.event_type = 'checkout' then 1 else 0 end) as checkouts
+    , sum(case when events.event_type = 'package_shipped' then 1 else 0 end) as package_shippeds
+    , sum(case when events.event_type = 'page_view' then 1 else 0 end) as page_views
     from events 
     left join products
         on events.product_guid = products.product_guid
