@@ -80,7 +80,7 @@
 
 **if your organization is thinking about using dbt, how would you pitch the value of dbt/analytics engineering to a decision maker at your organization?**
 
-They are already two attempts of demonstrating the benefits of dbt from a consulting company and from dbt professional services. Unfortunately, both presentations where to technical for the audience. So, my job is to create a presentation that demonstrate with measuring effort the benefits of dbt in each stage of the process. For example: Time to deploy to production, time to respond an adhoc report, time to react to an emergency and so on.
+There are already two attempts of demonstrate the benefits of dbt from a consulting company and from dbt professional services. Unfortunately, both presentations were to technical for the audience. So my job is to create a presentation that demonstrate with measuring effort the benefits of dbt in each stage of the process. For example: Time to deploy to production, time to respond an adhoc report, time to react to an emergency and so on.
 
 **if your organization is using dbt, what are 1-2 things you might do differently / recommend to your organization based on learning from this course?**
 
